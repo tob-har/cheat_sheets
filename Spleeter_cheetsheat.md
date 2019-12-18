@@ -1,6 +1,6 @@
-#Spleeter
+# Spleeter
 
-###Conda Environment
+### Conda Environment
 
 Activate Spleeter
 
