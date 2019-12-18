@@ -3,11 +3,15 @@
 [Download ffmpeg](https://ffmpeg.org/)
 
 [ffmpeg Documentation](https://ffmpeg.org/ffmpeg-all.html)
+
 [ffmpeg wiki](https://trac.ffmpeg.org/wiki)
+
 [ffmprovisr](https://amiaopensource.github.io/ffmprovisr/#abitscope)
+
 [ffmpeg-commands](https://catswhocode.com/ffmpeg-commands/)
 
 [Video Size Syntax Overview](https://ffmpeg.org/ffmpeg-utils.html#video-size-syntax)
+
 [Audio Filter Documentation](https://ffmpeg.org/ffmpeg-filters.html#Audio-Filters)
 
 
