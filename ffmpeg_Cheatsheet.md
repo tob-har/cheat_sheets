@@ -1,21 +1,13 @@
+# ffmpeg cheat sheet
 
-
-
-
-
-
-
-
+[Download ffmpeg](https://ffmpeg.org/)
+[ffmpeg Documentation](https://ffmpeg.org/ffmpeg-all.html)
 [ffmpeg wiki](https://trac.ffmpeg.org/wiki)
-
 [ffmprovisr](https://amiaopensource.github.io/ffmprovisr/#abitscope)
-
 [ffmpeg-commands](https://catswhocode.com/ffmpeg-commands/)
 
-
-
 [Video Size Syntax Overview](https://ffmpeg.org/ffmpeg-utils.html#video-size-syntax)
-
+[Audio Filter Documentation](https://ffmpeg.org/ffmpeg-filters.html#Audio-Filters)
 
 
 ### Get File Information
@@ -230,8 +222,6 @@ ffmpeg -i input.wav -filter_complex \
 -map "[v]" -map 0:a output.mp4
 ```
 
-
-
 some Options for ```showfreqs``` 
 
 - ```mode=bar``` Options are `=line` `=dot`
@@ -244,26 +234,17 @@ some Options for ```showfreqs```
 - `colors=Azure|Lime` (set colors. Check `ffmpeg -colors` for available color names)
 
 
-
 ```
 ffplay -f lavfi "amovie=input.mp4, asplit [a][out1]; [a]  showfreqs=mode=line:fscale=log [out0]"
 ```
 
-
-
 ### Video from Spatial Relationship between two Audio Channels
-
-
 
 ```
 ffmpeg -i input.wav -filter_complex \
 "[0:a]showspatial=s=1024x768:win_size=2048,format=yuv420p[v]" \
 -map "[v]" -map 0:a output.mp4
 ```
-
-
-
-
 
 ### Audio Volume Video from Audio File
 
@@ -274,11 +255,9 @@ ffmpeg -i input.wav -filter_complex \
 ```
 
 
-
 ```
 ffplay -f lavfi "amovie=input.mka, asplit [a][out1]; [a] showvolume=f=255:b=4:w=720:h=68 [out0]"
 ```
-
 
 
 ### Video to Analyse Musical Notes from Audio File
@@ -290,11 +269,9 @@ ffmpeg -i input.wav -filter_complex \
 ```
 
 
-
 ```
 ffplay -f lavfi "amovie=input.mp4, asplit [a][out1]; [a] showcqt [out0]"
 ```
-
 
 
 ### Volume Histogram Video from Audio File
@@ -305,14 +282,9 @@ ffmpeg -i input.wav -filter_complex \
 -map "[v]" -map 0:a output.mp4
 ```
 
-
-
 ```
 ffplay -f lavfi "amovie=input.flac, asplit [a][out1]; [a] ahistogram [out0]"
 ```
-
-
-
 
 
 ### VR 180 Format für Google Video 
@@ -330,9 +302,6 @@ ffmpeg -i /SOURCE-FILELOCATION/SOURCE-FILENAME -c:v libx264 -preset fast -crf 18
 ```
 
 
-
-
-
 ### Convert Video with Audio for youtube Upload
 
 Video conversion with audio stream copying:
@@ -344,13 +313,11 @@ ffmpeg -i input.avi -c:v libx264 -preset slow -crf 18 -c:a copy -pix_fmt yuv420p
 - add for youtube faststart: `-movflags +faststart` 
 
 
-
 Video conversion with Audio reencoding (AAC):
 
 ```
 ffmpeg -i input.mov -c:v libx264 -preset slow -crf 18 -c:a aac -b:a 192k -pix_fmt yuv420p output.mkv
 ```
-
 
 
 Create Video from still image and audio file:
