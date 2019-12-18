@@ -1,4 +1,8 @@
 # Spleeter
+Demix Audio Tracks into single STEMS/Tracks, based on a trained model.
+
+[Spleeter Repository](https://github.com/deezer/spleeter.git)
+
 
 ### Conda Environment
 
