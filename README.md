@@ -6,6 +6,7 @@
 
 Feel free to contribute with other Cheat Sheets or corrections, annotations, etc. via pull requests or message.
 
+---
 
 also see:
 [Aweseome Cheatsheets Repo](https://github.com/LeCoupa/awesome-cheatsheets)
