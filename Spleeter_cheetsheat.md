@@ -35,6 +35,9 @@ vocals / accompainment
 
 ```
 spleeter separate -i input_path.wav -c wav -o output_folder_path
+
+spleeter separate -i /Users/t.hartmann/Desktop/0324_Atmo.wav -c wav -o /Users/t.hartmann/Desktop/
+
 ```
 
 `-o` creates an output folder
@@ -59,5 +62,14 @@ vocals / bass / drums / piano / other
 
 ```
 spleeter separate -i input_path.wav -c wav -o output_folder_path -p spleeter:5stems
+
+
+
+
 ```
 
+For example:
+```
+spleeter separate -i /Users/t.hartmann/Desktop/mcee.wav -c wav -o /Users/t.hartmann/Desktop/mcee_output -p spleeter:5stems
+
+```
